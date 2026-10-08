@@ -14,12 +14,12 @@ class Kiss < Formula
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/racetozero/kiss/releases/download/v0.0.35/kiss-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "80538315e96ef910d9c6f6fb95b19014650968598a790556c82ed0091fa64634"
+      url "https://github.com/racetozero/kiss/releases/download/v0.0.35/kiss-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "6920596c7e8c570f41539b85ca364985a8e76a222cf533eacdc5c71efa22ffc0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/racetozero/kiss/releases/download/v0.0.35/kiss-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9920e84b6e8df42c059e789d994a3c9851943c05f63b95991d53713918d7ddca"
+      url "https://github.com/racetozero/kiss/releases/download/v0.0.35/kiss-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "3fc050deb8c6737cc51bdf59e050f990df03b159ab407680e98a3ae85a343375"
     end
   end
   license "MIT"
