@@ -1,25 +1,25 @@
 class Kiss < Formula
   desc "kiss: a fast, minimal terminal coding agent"
   homepage "https://github.com/racetozero/kiss"
-  version "0.0.36"
+  version "0.0.38"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/racetozero/kiss/releases/download/v0.0.36/kiss-aarch64-apple-darwin.tar.gz"
-      sha256 "00052a84d587cd6a29c3e2c3a1f2b3b5a6dd9fb090a33ee1cd44e65aaeee3c31"
+      url "https://github.com/racetozero/kiss/releases/download/v0.0.38/kiss-aarch64-apple-darwin.tar.gz"
+      sha256 "07f9fcb91f3b97502758591ddfd1f237f282d9e8d1ab6fdbaaa30df668c37e46"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/racetozero/kiss/releases/download/v0.0.36/kiss-x86_64-apple-darwin.tar.gz"
-      sha256 "14c4ab00224276bb43555b654ba3bad36aa86f76835f03fd4b89c8657601ebc2"
+      url "https://github.com/racetozero/kiss/releases/download/v0.0.38/kiss-x86_64-apple-darwin.tar.gz"
+      sha256 "f14990fcd7b06f0cef1acee09bcd8d4a2b53836da90f061120672a3442ea63b7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/racetozero/kiss/releases/download/v0.0.36/kiss-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "bbeb4028d4595462e40b66d16396cef009f1efc1daf652f35dd6a42a80b65c82"
+      url "https://github.com/racetozero/kiss/releases/download/v0.0.38/kiss-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "d281565a623acdda10988f6c8566f06ca6edaeb024890baa3e8ff29e9bb25408"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/racetozero/kiss/releases/download/v0.0.36/kiss-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "c693138ea06fb0128cecd168e543c38b079501b1b9fe47624dd6d6045bcd51fb"
+      url "https://github.com/racetozero/kiss/releases/download/v0.0.38/kiss-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "0edd67f1f7db028a2c0cb74f3f2bb9c69f6f82c5fc16975157c07fbca3bdb588"
     end
   end
   license "MIT"
