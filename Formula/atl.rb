@@ -1,25 +1,25 @@
 class Atl < Formula
   desc "atl: one CLI and MCP server for Jira, Confluence, Bitbucket, Trello and Atlassian Admin, Cloud and Data Center"
   homepage "https://github.com/racetozero/atlassian-toolkit"
-  version "0.0.1"
+  version "0.0.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/racetozero/atlassian-toolkit/releases/download/v0.0.1/atl-aarch64-apple-darwin.tar.gz"
-      sha256 "cc4a5c0a73a721c6a2010d416ae2208f31497b43e75fab7f09a871b4206c5cb8"
+      url "https://github.com/racetozero/atlassian-toolkit/releases/download/v0.0.2/atl-aarch64-apple-darwin.tar.gz"
+      sha256 "bee71cf24a0100b707a43d1633d6ea4f110b0b75350a76888e102a8bc1b47aad"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/racetozero/atlassian-toolkit/releases/download/v0.0.1/atl-x86_64-apple-darwin.tar.gz"
-      sha256 "e81bd596e48e3433e2e05f306719351f333c8ed0b476b48dbe8ba732b8f4cbff"
+      url "https://github.com/racetozero/atlassian-toolkit/releases/download/v0.0.2/atl-x86_64-apple-darwin.tar.gz"
+      sha256 "bb8678d4070888e8f8f3640c16a91486da703934c6ca7cab2c2af43debce05bc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/racetozero/atlassian-toolkit/releases/download/v0.0.1/atl-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "b7f314cb44eab2b06a575cdc140fbc226611bdbb721dc2c88128e145477caadb"
+      url "https://github.com/racetozero/atlassian-toolkit/releases/download/v0.0.2/atl-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "735c4460931947704f659051d8ee176f3e542dca86dbd8cafdf7683bb79c9d75"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/racetozero/atlassian-toolkit/releases/download/v0.0.1/atl-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "1266c2a35f4c767e9efbcdd0b04bcd8abd96d7a2e3fbb45ca726a947d784554a"
+      url "https://github.com/racetozero/atlassian-toolkit/releases/download/v0.0.2/atl-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "92aab4ee7f1f982543992255ee9789d2f1721ec2d557d1206c61e7b7558c344a"
     end
   end
   license "MIT"
