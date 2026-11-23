@@ -1,25 +1,25 @@
 class SnowflakeCli < Formula
   desc "snow: a fast, identical Rust port of Snowflake CLI"
   homepage "https://github.com/racetozero/snowflake-cli"
-  version "0.0.1"
+  version "0.0.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/racetozero/snowflake-cli/releases/download/v0.0.1/snowflake-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "c6cb4fd4556291d96a4386fb7d03cd2c922b0f63a5b75ee311472e3a4c2c1896"
+      url "https://github.com/racetozero/snowflake-cli/releases/download/v0.0.2/snowflake-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "f7fd13a8d07abce4178365948ac36113b432305b49ca02dfa33e531c631f4158"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/racetozero/snowflake-cli/releases/download/v0.0.1/snowflake-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "05760ceb6e7cc3b745f92162b415dad47e54311b2c79cd9defe63a1af86d5191"
+      url "https://github.com/racetozero/snowflake-cli/releases/download/v0.0.2/snowflake-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "3a0418399418a7619f7c9c6ee33e6521ae0ea428212ef973360d44bd97ca36cf"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/racetozero/snowflake-cli/releases/download/v0.0.1/snowflake-cli-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "40332c3510185c2c38cbc19691ada980c1534a8be62b0f496ecb849a2931a01b"
+      url "https://github.com/racetozero/snowflake-cli/releases/download/v0.0.2/snowflake-cli-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "e35b54fb9500d21987f587569b6767ee16bb27f5e472243dd5aabb73ecf1db63"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/racetozero/snowflake-cli/releases/download/v0.0.1/snowflake-cli-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "3a72507001152ccc6a4d2fa2df9e82d4ec3616170bee553ef28e762a6e2ff718"
+      url "https://github.com/racetozero/snowflake-cli/releases/download/v0.0.2/snowflake-cli-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "8c3d13ba6e2fa69ad4c18b127431f7e13523aaca8662e3b8614805b4e24d3c67"
     end
   end
   license "Apache-2.0"
