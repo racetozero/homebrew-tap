@@ -1,25 +1,25 @@
 class M365 < Formula
   desc "m365: a fast native port of the CLI for Microsoft 365"
   homepage "https://github.com/racetozero/microsoft-365-cli"
-  version "0.0.1"
+  version "0.0.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/racetozero/microsoft-365-cli/releases/download/v0.0.1/m365-aarch64-apple-darwin.tar.gz"
-      sha256 "eea8dbf8c04a389b02e23ab4ea9c52d4fff7f5559f02b43f7e7345b9c51a61cc"
+      url "https://github.com/racetozero/microsoft-365-cli/releases/download/v0.0.2/m365-aarch64-apple-darwin.tar.gz"
+      sha256 "b7919d5b631347dfaf123c9ce4f7233c26446ed9b4a568fa021630a07c8da071"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/racetozero/microsoft-365-cli/releases/download/v0.0.1/m365-x86_64-apple-darwin.tar.gz"
-      sha256 "ba1be466b5b45690d3b07ee97351995fdafe9eea9232bbff5668d8d340c7bcc7"
+      url "https://github.com/racetozero/microsoft-365-cli/releases/download/v0.0.2/m365-x86_64-apple-darwin.tar.gz"
+      sha256 "fc1a069db54e12225fb9c3d940fe1cea68a1330be45723cc297b865ec9794bf6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/racetozero/microsoft-365-cli/releases/download/v0.0.1/m365-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "bcfb53dd3d19960d40852d6d2dfb43bd7df4dd67f03fd082df78dc704d8bcb95"
+      url "https://github.com/racetozero/microsoft-365-cli/releases/download/v0.0.2/m365-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "167dc578fa66ac863793ca41c714270795b8f483de6fb747b3b0eba04a0871c2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/racetozero/microsoft-365-cli/releases/download/v0.0.1/m365-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "535b63e8aa13f21fdf98d3c03706ada601b46211672fc29b5ad0d84139762676"
+      url "https://github.com/racetozero/microsoft-365-cli/releases/download/v0.0.2/m365-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "f1dcaa421c05251609c745380eea5e9b9a723deca6e2e8025cdba99f2ab88e6e"
     end
   end
   license "MIT"
