@@ -1,25 +1,25 @@
 class Sn < Formula
   desc "ServiceNow from the terminal: SSO sign-in, every REST API, agent mode, and a full-screen workspace"
   homepage "https://github.com/racetozero/servicenow-cli"
-  version "0.0.1"
+  version "0.0.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/racetozero/servicenow-cli/releases/download/v0.0.1/sn-aarch64-apple-darwin.tar.gz"
-      sha256 "1b639cc16372eba25a81b11ad42881e3429ee4706a2e6671001e594fa0af22ca"
+      url "https://github.com/racetozero/servicenow-cli/releases/download/v0.0.2/sn-aarch64-apple-darwin.tar.gz"
+      sha256 "baae144833746ac4bb43936ac49656989bbd582cb536cb88fae25c0344bd8e1e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/racetozero/servicenow-cli/releases/download/v0.0.1/sn-x86_64-apple-darwin.tar.gz"
-      sha256 "0bb84c176eabcbda2e9c9342ca3548e81e8788705fd7087ce834eaa44b774f75"
+      url "https://github.com/racetozero/servicenow-cli/releases/download/v0.0.2/sn-x86_64-apple-darwin.tar.gz"
+      sha256 "dba258ec6a1b2484515813a2dd18563502f20ee4830c48db29306be02de36318"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/racetozero/servicenow-cli/releases/download/v0.0.1/sn-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "5bced147cda5038aa6f8bf07b500c3f7fb99d75d368274f62a02fa3e112d1bb3"
+      url "https://github.com/racetozero/servicenow-cli/releases/download/v0.0.2/sn-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "2336e596bfad991e3eaf8f622302edf0be8e5f4c017917edbc7c48d66e15dd11"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/racetozero/servicenow-cli/releases/download/v0.0.1/sn-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "971e5aec761033abf301dffed3143b5d97b17e0206ff8e15636d6c463b97d90a"
+      url "https://github.com/racetozero/servicenow-cli/releases/download/v0.0.2/sn-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "509bf314cf8dbf5425ce840229f715f4e788446a9babd8263b3d112b0c64e133"
     end
   end
   license "MIT"
